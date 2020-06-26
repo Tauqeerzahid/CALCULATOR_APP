@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"">                   
+        <title>Calculator</title>
+</head>
+<body>
+    <div class="main">
+        <div>
+             <input class="Result_box" onblur="this.style.backgroundColor = 'white'" onfocus="this.style.backgroundColor = ' rgb(75, 160, 235)'" id="Result">
+        </div>
+        <div>
+            <button class="Clear" onclick="ResultClear()" >Clear</button>
+        </div>
+        <!-- <div>
+            <button class="NoBtn"><i class="fas fa-percentage fa-xs"></i></button>
+            <button class="NoBtn"><i class="fas fa-square-root-alt fa-xs"></i></button>
+            <button  class="NoBtn"><i class="fas fa-subscript fa-xs"></i></button>
+            <button class="NoBtn"><i class="fas fa-superscript fa-xs"></i></button>
+        </div> -->
+        <div>
+            <button class="NoBtn" onclick="GetNumber('7')">7</button>
+            <button class="NoBtn" onclick="GetNumber('8')">8</button>
+            <button  class="NoBtn" onclick="GetNumber('9')">9</button>
+            <button class="NoBtn" onclick="GetNumber('/')"><i class="fas fa-divide fa-xs"></i></button>
+        </div>
+        <div>
+            <button class="NoBtn" onclick="GetNumber('4')">4</button>
+            <button class="NoBtn" onclick="GetNumber('5')">5</button>
+            <button class="NoBtn" onclick="GetNumber('6')">6</button>
+            <button class="NoBtn" onclick="GetNumber('*')"><i class="fas fa-times fa-xs"></i></button>
+        </div>
+        <div>
+            <button class="NoBtn" onclick="GetNumber('1')">1</button>
+            <button class="NoBtn" onclick="GetNumber('2')">2</button>
+            <button class="NoBtn" onclick="GetNumber('3')">3</button>
+            <button class="NoBtn" onclick="GetNumber('-')"><i class="fas fa-minus fa-xs"></i></button>
+        </div>
+        <div>
+            <button class="NoBtn" onclick="GetNumber('0')">0</button>
+            <button class="NoBtn" onclick="GetNumber('.')">.</button>
+            <button class="NoBtn" onclick="GetNumber('+')"><i class="fas fa-plus fa-xs"></i></button>
+            <button class="NoBtn" onclick="GetResult()"><i class="fas fa-equals fa-xs"></i></button>
+            
+        </div>
+
+    </div>
+    
+</body>
+<script src="app.js"></script>
+</html>
